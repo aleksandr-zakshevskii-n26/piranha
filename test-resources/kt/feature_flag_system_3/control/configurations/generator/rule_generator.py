@@ -122,9 +122,6 @@ def load_rules_graph(yml_path):
 
     # Function to recursively build the graph
     def build_graph(current_node, visited):
-        # if current_node in terminal_nodes:
-        #     return None  # Return None for terminal nodes
-
         # Increase visit count and check if visited more than twice
         if visited.get(current_node, 0) >= 2:
             return {}  # Skip if visited more than twice
